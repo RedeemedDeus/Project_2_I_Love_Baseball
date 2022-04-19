@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1592</width>
+    <height>894</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>280</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display Trip</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>340</y>
+      <width>831</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../build-Project_2_I_Love_Baseball-Desktop_Qt_5_11_2_MinGW_32bit-Debug/debug/MLB_Stadium_Map.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>10</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Destination</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>10</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Starting Location </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>League Selection</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>10</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Total Miles</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>40</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>30</y>
+      <width>631</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>241</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>PETCO Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dodger Stadium - Angel Stadium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AT&amp;T Park - O.co Coliseum</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>10</y>
+        <width>251</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>PETCO Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dodger Stadium - Angel Stadium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AT&amp;T Park - O.co Coliseum</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Safeco Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chase Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Coors Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minute Maid Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rangers Ballpark</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kauffman Stadium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Target Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Busch Stadium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wringley Field - US. Cellular Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Miller Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Marlins Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tropicana Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Turner Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Great American Ballpark</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PNC Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Progressive Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Comerica Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rogers Center</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Camden Yards - Nationals Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Citizens Bank Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Yankee Stadium - Citi Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fenway Park</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QComboBox" name="comboBox_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>241</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Angel Stadium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>O.co Coliseum</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox_4">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>10</y>
+        <width>251</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Angel Stadium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>O.co Coliseum</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Safeco Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minute Maid Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rangers Ballpark</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kauffman Stadium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Target Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>US. Cellular Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Comerica Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Progressive Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tropicana Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Camden Yards</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Yankee Stadium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rogers Center</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fenway Park</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QComboBox" name="comboBox_5">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>241</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>PETCO Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dodger Stadium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AT&amp;T Park</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox_6">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>10</y>
+        <width>251</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>PETCO Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dodger Stadium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AT&amp;T Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chase Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Coors Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Busch Stadium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wringley Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Miller Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Great American Ballpark</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PNC Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Marlins Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Turner Field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nationals Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Citizens Bank Park</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Citi Field</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>97</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MLB</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>97</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AL</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>97</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>380</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Custom Trip</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>431</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;Select a starting location from the drop-down list, then,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;add the stadiums you wanna visit in the order you wanna visit them &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;by selecting them from the drop-down list and pressing the&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;&amp;quot;Add Destination&amp;quot; button. Once you are done adding all your stadiums, &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;press the &amp;quot;Display Custom Trip&amp;quot; button to display your trip. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_custom_source">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>530</y>
+      <width>231</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>PETCO Park</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dodger Stadium - Angel Stadium</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AT&amp;T Park - O.co Coliseum</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_custom_destinations">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>590</y>
+      <width>251</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>PETCO Park</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dodger Stadium - Angel Stadium</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AT&amp;T Park - O.co Coliseum</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Safeco Field</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Chase Field</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Coors Field</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Minute Maid Park</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Rangers Ballpark</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Kauffman Stadium</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Target Field</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Busch Stadium</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Wringley Field - US. Cellular Field</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Miller Park</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Marlins Park</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tropicana Field</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Turner Field</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Great American Ballpark</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PNC Park</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Progressive Field</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Comerica Park</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Rogers Center</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Camden Yards - Nationals Park</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Citizens Bank Park</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yankee Stadium - Citi Field</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fenway Park</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>510</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Starting Location</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>570</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Destinations</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_custom_add_destination">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>590</y>
+      <width>191</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Destination</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_custom_display_trip">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>640</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display Custom Trip</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_custom_total">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>620</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>590</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Total Miles</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>710</y>
+      <width>301</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Admin Stuff, Don't touch anything if not admin, ok?</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_xcord_add">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>770</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>90</number>
+    </property>
+    <property name="maximum">
+     <number>746</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>750</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X-Coordinate</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_ycord_add">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>770</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>355</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>750</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y - Coordniate</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_add_stadium">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>810</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Stadium</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1592</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
